@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Showcase PBL | PBL Vokasi</title>
-  
+  <?php include("../includes/head.php") ?>
   <link
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
@@ -13,7 +13,7 @@
 </head>
 <body class="bg-gray-50">
 
-  <?php include("./navbar.php") ?>
+  <?php include("../includes/navbarshowcase.php") ?>
 
 <!-- penjelasan project -->
   <section class="bg-white">
@@ -42,7 +42,7 @@
         <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6 grid grid-cols-3 place-items-center">   
 
             <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-            <img src="./assets/img/img_lp1.png" alt="mockup">
+            <img src="./img/ioniq5.png" alt="mockup">
                 <div class="p-4">
                     <a href="#">
                         <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
@@ -53,7 +53,7 @@
 
             
             <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-            <img src="./assets/img/img_lp1.png" alt="mockup">
+            <img src="./img/ioniq5.png" alt="mockup">
                 <div class="p-4">
                     <a href="#">
                         <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
@@ -64,7 +64,7 @@
 
             
             <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-            <img src="./assets/img/img_lp1.png" alt="mockup">
+            <img src="./img/ioniq5.png" alt="mockup">
                 <div class="p-4">
                     <a href="#">
                         <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
