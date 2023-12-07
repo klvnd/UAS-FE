@@ -9,8 +9,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel ="stylesheet" />
 </head>
 <body class="bg-gray-950">
+<?php include("./navbar.php") ?>
 <header>
-<nav class="bg-white border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-gray-800">
+<!-- <nav class="bg-white border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-gray-800">
     <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xs">
         <img src="img/logo.png" class="mr-3 h-12 sm:h-9 mt-1" alt="Flowbite Logo" />
 
@@ -41,7 +42,7 @@
             </ul>
         </div>
     </div>
-</nav>
+</nav> -->
 
 </header>
 
@@ -49,12 +50,12 @@
 
   
 
-<!-- <section class="bg-center bg-no-repeat bg-gray-700 bg-blend-multiply" style="background-image: url('img/bg-awal.png');">
+<section class="bg-center bg-no-repeat bg-gray-700 bg-blend-multiply" style="background-image: url('img/bg-awal.png');">
     <div class="px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-56">
         <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl">Mobil Listrik, Mobil Masa Depan</h1>
         <p class="mb-8 text-lg font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48">Membangkitkan Masa Depan, Menggerakkan Keberlanjutan: Temukan Revolusi Listrik bersama MobiListrik!</p>
         <div class="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0">
-            <a href="#" class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">
+            <a href="./login.php" class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">
                 Login
                 <svg class="w-3.5 h-3.5 ms-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
@@ -65,12 +66,12 @@
             </a>  
         </div>
     </div>
-</section> -->
+</section>
 
 
 <section class="bg-gray-900 my-16 shadow-xl">
     <div class="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6">
-        <img class="w-full dark:block" src="img/ioniq5.png" alt="dashboard image">
+        <img class="w-full " src="./img/ioniq5.png" alt="dashboard image">
         <!-- <img class="w-full hidden dark:block" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/cta/cta-dashboard-mockup-dark.svg" alt="dashboard image"> -->
         <div class="mt-4 md:mt-0">
             <h2 class="mb-4 text-4xl text-white font-extrabold">Mobil Listrik di Indonesia</h2>
@@ -172,7 +173,7 @@
                 <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ms-3">5.0</span>
             </div>
             <div class="flex items-center justify-between">
-                <span class="text-xl font-bold">Rp 681,9 - 783,1 Juta</span>
+                <span class="text-xl font-bold text-gray-900 dark:text-white">Rp 681,9 - 783,1 Juta</span>
                 <a href="#" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add to cart</a>
             </div>
         </div>
@@ -207,7 +208,7 @@
                 <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ms-3">5.0</span>
             </div>
             <div class="flex items-center justify-between">
-                <span class="text-xl font-bold">Rp 3,41 M</span>
+                <span class="text-xl font-bold text-gray-900 dark:text-white">Rp 3,41 M</span>
                 <a href="#" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add to cart</a>
             </div>
         </div>
