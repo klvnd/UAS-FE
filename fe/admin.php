@@ -108,7 +108,7 @@
                             </td>
                         </tr>
                         <tr class="border-b hover:bg-gray-100">
-                            <th scope="row" class="px-4 py-3 px-2 py-3 font-medium text-gray-900 whitespace-nowrap">1.</th>
+                            <th scope="row" class="px-4 py-3 px-2 py-3 font-medium text-gray-900 whitespace-nowrap">2.</th>
                             <td class="px-4 py-3 px-2 py-3"><img src="img/mercyesv.png" alt="" class="w-40"></td>
                             <td class="px-4 py-3 px-2 py-3">mercy</td>
                             <td class="px-4 py-3 px-2 py-3">RP.200.000.000.000</td>
@@ -123,7 +123,7 @@
                             </td>
                         </tr>
                         <tr class="border-b hover:bg-gray-100">
-                            <th scope="row" class="px-4 py-3 px-2 py-3 font-medium text-gray-900 whitespace-nowrap">1.</th>
+                            <th scope="row" class="px-4 py-3 px-2 py-3 font-medium text-gray-900 whitespace-nowrap">3.</th>
                             <td class="px-4 py-3 px-2 py-3"><img src="img/ioniq5.png" alt="" class="w-40"></td>
                             <td class="px-4 py-3 px-2 py-3">ioniq</td>
                             <td class="px-4 py-3 px-2 py-3">RP.200.000.000.000</td>
@@ -138,7 +138,7 @@
                             </td>
                         </tr>
                         <tr class="border-b hover:bg-gray-100">
-                            <th scope="row" class="px-4 py-3 px-2 py-3 font-medium text-gray-900 whitespace-nowrap">1.</th>
+                            <th scope="row" class="px-4 py-3 px-2 py-3 font-medium text-gray-900 whitespace-nowrap">4.</th>
                             <td class="px-4 py-3 px-2 py-3"><img src="img/ioniq5.png" alt="" class="w-40"></td>
                             <td class="px-4 py-3 px-2 py-3">ioniq</td>
                             <td class="px-4 py-3 px-2 py-3">RP.200.000.000.000</td>
@@ -153,7 +153,7 @@
                             </td>
                         </tr>
                         <tr class="border-b hover:bg-gray-100">
-                            <th scope="row" class="px-4 py-3 px-2 py-3 font-medium text-gray-900 whitespace-nowrap">1.</th>
+                            <th scope="row" class="px-4 py-3 px-2 py-3 font-medium text-gray-900 whitespace-nowrap">5.</th>
                             <td class="px-4 py-3 px-2 py-3"><img src="img/ioniq5.png" alt="" class="w-40"></td>
                             <td class="px-4 py-3 px-2 py-3">ioniq</td>
                             <td class="px-4 py-3 px-2 py-3">RP.200.000.000.000</td>
@@ -168,7 +168,7 @@
                             </td>
                         </tr>
                         <tr class="border-b hover:bg-gray-100">
-                            <th scope="row" class="px-4 py-3 px-2 py-3 font-medium text-gray-900 whitespace-nowrap">1.</th>
+                            <th scope="row" class="px-4 py-3 px-2 py-3 font-medium text-gray-900 whitespace-nowrap">6.</th>
                             <td class="px-4 py-3 px-2 py-3"><img src="img/ioniq5.png" alt="" class="w-40"></td>
                             <td class="px-4 py-3 px-2 py-3">ioniq</td>
                             <td class="px-4 py-3 px-2 py-3">RP.200.000.000.000</td>
@@ -183,7 +183,7 @@
                             </td>
                         </tr>
                         <tr class="border-b hover:bg-gray-100">
-                            <th scope="row" class="px-4 py-3 px-2 py-3 font-medium text-gray-900 whitespace-nowrap">1.</th>
+                            <th scope="row" class="px-4 py-3 px-2 py-3 font-medium text-gray-900 whitespace-nowrap">7.</th>
                             <td class="px-4 py-3 px-2 py-3"><img src="img/ioniq5.png" alt="" class="w-40"></td>
                             <td class="px-4 py-3 px-2 py-3">ioniq</td>
                             <td class="px-4 py-3 px-2 py-3">RP.200.000.000.000</td>
@@ -198,7 +198,7 @@
                             </td>
                         </tr>
                         <tr class="border-b hover:bg-gray-100">
-                            <th scope="row" class="px-4 py-3 px-2 py-3 font-medium text-gray-900 whitespace-nowrap">1.</th>
+                            <th scope="row" class="px-4 py-3 px-2 py-3 font-medium text-gray-900 whitespace-nowrap">8.</th>
                             <td class="px-4 py-3 px-2 py-3"><img src="img/ioniq5.png" alt="" class="w-40"></td>
                             <td class="px-4 py-3 px-2 py-3">ioniq</td>
                             <td class="px-4 py-3 px-2 py-3">RP.200.000.000.000</td>
