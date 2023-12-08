@@ -1,4 +1,4 @@
-<nav class="sticky top-0 l-0 w-full bg-white z-50">
+<nav class="sticky top-0 l-0 w-full bg-gray-800 z-50">
   <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
     <div class="relative flex h-16 items-center justify-between">
       <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
@@ -26,29 +26,28 @@
       </div>
       <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
         <div class="flex flex-shrink-0 items-center">
-          <img class="h-8 w-auto" src="./assets/img/logo.png" alt="Your Company">
+          <img class="h-8 w-auto" src="./img/logo.png" alt="Your Company">
         </div>
         <div class="hidden sm:ml-6 sm:block">
           <div class="flex space-x-4">
             <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-            <a href="./index.php" class="rounded-md px-3 py-2 text-sm font-medium hover:text-amber-500 z-50" aria-current="page">Beranda</a>
-            <a href="#" class=" hover:text-amber-500 z-50 rounded-md px-3 py-2 text-sm font-medium">Tentang</a>
-            <a href="./showcase.php" class="bg-amber-500 text-white rounded-md px-3 py-2 text-sm font-medium">Showcase PBL</a>
+            <a href="./index.php" class="rounded-md px-3 py-2 text-white text-sm font-medium hover:text-amber-500 z-50" aria-current="page">Beranda</a>
+            <a href="#tentang" class=" hover:text-amber-500 z-50 text-white  rounded-md px-3 py-2 text-sm font-medium">Tentang</a>
           </div>
         </div>
       </div>
-      <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-        <span class="text-sm mx-2">Hi, Jake Pierce</span>
+      <!-- <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+        <span class="text-white text-sm mx-2">Hi, Jake Pierce</span> -->
 
         <!-- Profile dropdown -->
-        <div class="relative ml-3 pfpBtn duration-300 ease-in-out">
+        <!-- <div class="relative ml-3 pfpBtn duration-300 ease-in-out">
           <div>
             <button type="button" class="relative flex rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800" id="user-menu-button" aria-expanded="false" aria-haspopup="true">
               <span class="absolute -inset-1.5"></span>
               <span class="sr-only">Open user menu</span>
               <img class="h-8 w-8 rounded-full" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
             </button>
-          </div>
+          </div> -->
 
           <!--
             Dropdown menu, show/hide based on menu state.

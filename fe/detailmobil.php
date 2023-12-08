@@ -45,36 +45,36 @@
           <p class="text-gray-500 sm:text-l text-center dark:text-gray-400">Hyundai Ioniq 5 tersedia dalam pilihan mesin Electric di Indonesia Hatchback baru dari Hyundai hadir dalam 8 varian. Ioniq 5 tersedia dengan transmisi Otomatis tergantung variannya. Ioniq 5 adalah Hatchback 5 seater dengan panjang 4635 mm, lebar 1890 mm, wheelbase 3000 mm. serta ground clearance 160 mm.</p>
       </div>    
       <div class="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-4 md:gap-12 md:space-y-0">
-        <div class="max-w-sm bg-white flex border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 flex flex-col items-center justify-center">
+        <div class="max-w-sm bg-grey flex border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 flex flex-col items-center justify-center">
             <div class="w-12 h-12 rounded-full bg-black flex justify-center items-center mb-4 lg:h-16 lg:w-16">
-                <img src="img/flaticon-oil.png" alt="bbm" class="w-6 h-6 text-white lg:w-8 lg:h-8 dark:text-primary-300">
+                <img src="img/flaticon-energy.png" alt="bbm" class="w-6 h-6 text-white lg:w-8 lg:h-8 dark:text-primary-300">
             </div>
             <h3 class="mb-2 text-xl font-bold text-center text-white">Jenis transmisi</h3>
             <p class="text-gray-500 dark:text-gray-400 text-center">Listrik Otomatis</p>
         </div>
 
-        <div class="max-w-sm bg-white flex border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 flex flex-col items-center justify-center">
+        <div class="max-w-sm bg-grey flex border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 flex flex-col items-center justify-center">
             <div class="w-12 h-12 rounded-full bg-black flex justify-center items-center mb-4 lg:h-16 lg:w-16">
-                <img src="img/flaticon-oil.png" alt="bbm" class="w-6 h-6 text-white lg:w-8 lg:h-8 dark:text-primary-300">
+                <img src="img/flaticon-baterai.png" alt="bbm" class="w-6 h-6 text-white lg:w-8 lg:h-8 dark:text-primary-300">
             </div>
-            <h3 class="mb-2 text-xl font-bold text-center text-white">Jenis transmisi</h3>
-            <p class="text-gray-500 dark:text-gray-400 text-center">Listrik Otomatis</p>
+            <h3 class="mb-2 text-xl font-bold text-center text-white">Kapasitas Baterai</h3>
+            <p class="text-gray-500 dark:text-gray-400 text-center">72,6 kWh</p>
         </div>
 
-        <div class="max-w-sm bg-white flex border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 flex flex-col items-center justify-center">
+        <div class="max-w-sm bg-grey flex border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 flex flex-col items-center justify-center">
             <div class="w-12 h-12 rounded-full bg-black flex justify-center items-center mb-4 lg:h-16 lg:w-16">
-                <img src="img/flaticon-oil.png" alt="bbm" class="w-6 h-6 text-white lg:w-8 lg:h-8 dark:text-primary-300">
+                <img src="img/flaticon-group.png" alt="bbm" class="w-6 h-6 text-white lg:w-8 lg:h-8 dark:text-primary-300">
             </div>
-            <h3 class="mb-2 text-xl font-bold text-center text-white">Jenis transmisi</h3>
-            <p class="text-gray-500 dark:text-gray-400 text-center">Listrik Otomatis</p>
+            <h3 class="mb-2 text-xl font-bold text-center text-white">Kapasitas Duduk</h3>
+            <p class="text-gray-500 dark:text-gray-400 text-center">5 Kursi</p>
         </div>
 
-        <div class="max-w-sm bg-white flex border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 flex flex-col items-center justify-center">
+        <div class="max-w-sm bg-grey flex border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 flex flex-col items-center justify-center">
             <div class="w-12 h-12 rounded-full bg-black flex justify-center items-center mb-4 lg:h-16 lg:w-16">
-                <img src="img/flaticon-oil.png" alt="bbm" class="w-6 h-6 text-white lg:w-8 lg:h-8 dark:text-primary-300">
+                <img src="img/flaticon-machine2.png" alt="bbm" class="w-6 h-6 text-white lg:w-8 lg:h-8 dark:text-primary-300">
             </div>
-            <h3 class="mb-2 text-xl font-bold text-center text-white">Jenis transmisi</h3>
-            <p class="text-gray-500 dark:text-gray-400 text-center">Listrik Otomatis</p>
+            <h3 class="mb-2 text-xl font-bold text-center text-white">Tenaga</h3>
+            <p class="text-gray-500 dark:text-gray-400 text-center">214 hp</p>
         </div>
       </div>
 
@@ -142,7 +142,7 @@
 <section class="bg-gray-900 my-16 shadow-xl">
     <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
         <h2 class="pt-8 px-4 text-4xl tracking-tight font-extrabold text-center text-white">Tampilan Interior</h2>
-        <p class="py-4 px-4 text-gray-600 sm:text-xl text-center">Berikut Tampilan Eksterior</p>
+        <p class="py-4 px-4 text-gray-600 sm:text-xl text-center">Berikut Tampilan Interior</p>
         <div class="container">
             <div class="pt-5 mt-5 flex flex-wrap justify-center">
                 <div class="w-full md:w-1/3 mb-4">
@@ -165,8 +165,8 @@
 
 <section class="bg-gray-900 my-16 shadow-xl">
     <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
-        <h2 class="pt-8 px-4 text-4xl tracking-tight font-extrabold text-center text-white">Gambar Eksterior</h2>
-        <p class="py-4 px-4 text-gray-600 sm:text-xl text-center">Here at Flowbite we focus on markets where technology, innovation, and capital can unlock long-term value and drive economic growth.</p>
+        <h2 class="pt-8 px-4 text-4xl tracking-tight font-extrabold text-center text-white">Tampilan Eksterior</h2>
+        <p class="py-4 px-4 text-gray-600 sm:text-xl text-center">Berikut Tampilan Eksterior</p>
         <div class="container">
             <div class="pt-5 mt-5 flex flex-wrap justify-center">
                 <div class="w-full md:w-1/3 mb-4">

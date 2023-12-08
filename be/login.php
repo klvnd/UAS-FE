@@ -25,7 +25,7 @@
             <div>
                 <div class="w-full lg:max-w-xl p-6 space-y-8 sm:p-8 bg-white rounded-lg shadow-xl">
                     <h2 class="text-3xl font-bold text-gray-900 ">
-                        Sign in to Mobil Listrik
+                        Login Sebagai Admin!
                     </h2>
                     <form class="mt-8 space-y-6" method="POST" action="proses-login.php">
                         <div>
