@@ -44,7 +44,7 @@
           <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-white dark:text-white ">Spesifikasi Hyundai Ionic 5</h2>
           <p class="text-gray-500 sm:text-l text-center dark:text-gray-400">Hyundai Ioniq 5 tersedia dalam pilihan mesin Electric di Indonesia Hatchback baru dari Hyundai hadir dalam 8 varian. Ioniq 5 tersedia dengan transmisi Otomatis tergantung variannya. Ioniq 5 adalah Hatchback 5 seater dengan panjang 4635 mm, lebar 1890 mm, wheelbase 3000 mm. serta ground clearance 160 mm.</p>
       </div>    
-      <div class="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0">
+      <div class="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-4 md:gap-12 md:space-y-0">
         <div class="max-w-sm bg-white flex border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 flex flex-col items-center justify-center">
             <div class="w-12 h-12 rounded-full bg-black flex justify-center items-center mb-4 lg:h-16 lg:w-16">
                 <img src="img/flaticon-oil.png" alt="bbm" class="w-6 h-6 text-white lg:w-8 lg:h-8 dark:text-primary-300">
@@ -68,6 +68,27 @@
             <h3 class="mb-2 text-xl font-bold text-center text-white">Jenis transmisi</h3>
             <p class="text-gray-500 dark:text-gray-400 text-center">Listrik Otomatis</p>
         </div>
+
+        <div class="max-w-sm bg-white flex border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 flex flex-col items-center justify-center">
+            <div class="w-12 h-12 rounded-full bg-black flex justify-center items-center mb-4 lg:h-16 lg:w-16">
+                <img src="img/flaticon-oil.png" alt="bbm" class="w-6 h-6 text-white lg:w-8 lg:h-8 dark:text-primary-300">
+            </div>
+            <h3 class="mb-2 text-xl font-bold text-center text-white">Jenis transmisi</h3>
+            <p class="text-gray-500 dark:text-gray-400 text-center">Listrik Otomatis</p>
+        </div>
+      </div>
+        <div class="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-2 md:gap-12 md:space-y-6">
+      <div class="max-w-sm mx-auto bg-white flex border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 flex flex-col items-center justify-center">
+        <h3 class="mb-2 text-xl font-bold text-center text-white">Jenis transmisi</h3>
+        <p class="text-gray-500 dark:text-gray-400 text-center">Hyundai Ioniq 5 2023 adalah 5 Seater Hatchback yang tersedia dalam daftar harga Rp 748 - 859 Juta di Indonesia. Mobil ini memiliki ground clearance 160 mm dengan dimensi sebagai berikut: 4635 mm L x 1890 mm W x 1647 mm H. Pesaing terdekat Hyundai Ioniq 5 adalah E-C4, Countryman, 3 Door dan Leaf.</p>
+      </div><div class="max-w-sm mx-auto bg-white flex border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 flex flex-col items-center justify-center">
+        <h3 class="mb-2 text-xl font-bold text-center text-white">Jenis transmisi</h3>
+        <p class="text-gray-500 dark:text-gray-400 text-center">Hyundai Ioniq 5 2023 adalah 5 Seater Hatchback yang tersedia dalam daftar harga Rp 748 - 859 Juta di Indonesia. Mobil ini memiliki ground clearance 160 mm dengan dimensi sebagai berikut: 4635 mm L x 1890 mm W x 1647 mm H. Pesaing terdekat Hyundai Ioniq 5 adalah E-C4, Countryman, 3 Door dan Leaf.</p>
+        
+      </div>
+      </div>
+
+  </div>
 
 </section>
 
