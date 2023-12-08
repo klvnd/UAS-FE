@@ -1,5 +1,4 @@
 <?php
-// Sertakan file koneksi atau buat koneksi di sini
 include("koneksi.php");
 
 // Query untuk mendapatkan data terakhir
@@ -12,14 +11,11 @@ $resultAll = $koneksi->query($queryAll);
 
 // Handle form submission
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Assuming your form fields are named 'name', 'harga', etc.
     $nama_mobil = $_POST["name"];
     $harga_mobil = $_POST["harga"];
 
-    // Assuming you have a column named 'foto_mobil' to store the file name
-    $foto_mobil = "default_filename.jpg";  // You need to handle file uploads separately
+    $foto_mobil = "default_filename.jpg"; 
 
-    // Assuming you have a column named 'deskripsi' for description
     $deskripsi = $_POST["deskripsi"];
 
     // Insert data into the database
