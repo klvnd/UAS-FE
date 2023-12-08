@@ -1,40 +1,3 @@
-<?php
-session_start();
-
-include("koneksi.php");
-
-// Initialize error message
-$error_message = "";
-
-// Check if the form is submitted
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $email = $_POST["email"];
-    $password = $_POST["password"];
-
-    // Lindungi dari SQL Injection dengan menggunakan parameterized query atau prepared statement
-    $query = "SELECT * FROM admin WHERE email = ? AND password = ?";
-    $stmt = $koneksi->prepare($query);
-    $stmt->bind_param("ss", $email, $password);
-    $stmt->execute();
-    $result = $stmt->get_result();
-
-    if ($result->num_rows == 1) {
-        // Jika data ditemukan, simpan informasi pengguna ke session
-        $row = $result->fetch_assoc();
-        $_SESSION["user_id"] = $row["id"];
-        $_SESSION["user_email"] = $row["email"];
-
-        // Redirect ke halaman admin
-        header("Location: admin.php");
-        exit();
-    } else {
-        $error_message = "Login failed. Check your email and password.";
-    }
-
-    $stmt->close();
-}
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -43,10 +6,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <title>Login - Mobil Listrik</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.0.0/flowbite.min.css" rel="stylesheet" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel ="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
 </head>
 <body class="bg-gray-950">
-<section class="bg-gray-950">
+<section class=" bg-gray-950">
     <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
         <div class="py-6 px-4 mx-auto max-w-screen-xl lg:py-16 grid bg-white lg:grid-cols-2 gap-8 lg:gap-16">
             <div class="flex flex-col justify-center">
@@ -64,21 +27,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     <h2 class="text-3xl font-bold text-gray-900 ">
                         Sign in to Mobil Listrik
                     </h2>
-
-                    <!-- Display error message if login fails -->
-                    <?php if ($error_message): ?>
-                        <div class="mb-4 text-red-500">
-                            <?php echo $error_message; ?>
-                        </div>
-                    <?php endif; ?>
-
-                    <form class="mt-8 space-y-6" method="post" action="admin.php">
+                    <form class="mt-8 space-y-6" method="POST" action="proses-login.php">
                         <div>
-                            <label for="email" class="block mb-2 text-sm font-medium text-gray-900">Your email</label>
+                            <label for="email" class="block mb-2 text-sm font-medium text-gray-900  ">Your email</label>
                             <input type="email" name="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="name@company.com" required>
                         </div>
                         <div>
-                            <label for="password" class="block mb-2 text-sm font-medium text-gray-900">Your password</label>
+                            <label for="password" class="block mb-2 text-sm font-medium text-gray-900 ">Your password</label>
                             <input type="password" name="password" id="password" placeholder="••••••••" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required>
                         </div>
                         <div class="flex items-start">
@@ -86,7 +41,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                                 <input id="remember" aria-describedby="remember" name="remember" type="checkbox" class="w-4 h-4 border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:bg-gray-700 dark:border-gray-600" required>
                             </div>
                             <div class="ms-3 text-sm">
-                                <label for="remember" class="font-medium text-gray-500 dark:text-gray-400">Remember this device</label>
+                            <label for="remember" class="font-medium text-gray-500 dark:text-gray-400">Remember this device</label>
                             </div>
                             <a href="#" class="ms-auto text-sm font-medium text-blue-600 hover:underline dark:text-blue-500">Lost Password?</a>
                         </div>
@@ -97,7 +52,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
     </div>
 </section>
-
 <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.0.0/flowbite.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
