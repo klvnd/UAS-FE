@@ -8,8 +8,13 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel ="stylesheet" />
 </head>
+<style>
+ html{
+   scroll-behavior: smooth;
+}
+</style>
 <body class="bg-gray-950">
-<?php include("../includes/navbar.php") ?>
+<?php include("./includes/navbar.php") ?>
 <header>
 <!-- <nav class="bg-white border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-gray-800">
     <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xs">
@@ -51,7 +56,7 @@
   
 
 <section class="bg-center bg-no-repeat bg-gray-700 bg-blend-multiply" style="background-image: url('img/bg-awal.png');">
-    <div class="px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-56">
+    <div section id="beranda" class="px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-56">
         <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl">Mobil Listrik, Mobil Masa Depan</h1>
         <p class="mb-8 text-lg font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48">Membangkitkan Masa Depan, Menggerakkan Keberlanjutan: Temukan Revolusi Listrik bersama MobiListrik!</p>
         <div class="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0">
@@ -70,7 +75,7 @@
 
 
 <section class="bg-gray-900 my-16 shadow-xl">
-    <div class="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6">
+    <div section id="tentang" class="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6">
         <img class="w-full " src="./img/ioniq5.png" alt="dashboard image">
         <!-- <img class="w-full hidden dark:block" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/cta/cta-dashboard-mockup-dark.svg" alt="dashboard image"> -->
         <div class="mt-4 md:mt-0">
