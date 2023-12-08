@@ -11,15 +11,15 @@
 />
 <link rel="stylesheet" href="./styles.css">
 </head>
-<body class="bg-gray-50">
+<body class="bg-gray-950">
 
-  <?php include("../includes/navbarshowcase.php") ?>
+  <?php include("../includes/navbar.php") ?>
 
 <!-- penjelasan project -->
-  <section class="bg-white">
+  <section class="bg-gray-900 my-16 shadow-xl">
     <div class="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
         <div class="mr-auto place-self-center lg:col-span-7">
-            <h1 class="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl text-gray-900">Sistem Informasi E - Complain</h1>
+            <h1 class="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl ">Sistem Informasi E - Complain</h1>
             <p class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl">Project Based Learning dari seluruh jurusan di Fakultas Vokasi mulai dari Teknologi Informasi, Desain Grafis, Administrasi Bisnis, Manajemen Perhotelan dan Keuangan Perbankan tersedia dan dapat anda lihat di sini.</p>
             <!-- <a href="#" class="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900">
                 Get started
@@ -36,7 +36,7 @@
 </section>
 
 <!-- pertinjau project -->
-<section class="bg-white">
+<section class="bg-gray-900">
         <h2 class="pt-8 px-4 text-5xl tracking-tight font-extrabold text-center text-gray-900  ">Pertinjau Proyek</h2>
         <p class="py-4 px-4 text-gray-500 sm:text-xl text-center text-gray-700">Here at Flowbite we focus on markets where technology, innovation, and capital can unlock long-term value and drive economic growth.</p>
         <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6 grid grid-cols-3 place-items-center">   
@@ -112,7 +112,7 @@
 
 
     <!-- Footer -->
-    <?php include("./includes/footer.php") ?>
+    <?php include("../includes/footer.php") ?>
   
 
   </body>
