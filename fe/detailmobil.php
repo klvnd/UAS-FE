@@ -16,11 +16,13 @@
   <?php include("../includes/navbar.php") ?>
 
 <!-- penjelasan project -->
-  <section class="bg-gray-900 my-16 shadow-xl">
+  <section class="bg-gray-900  shadow-xl">
     <div class="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
         <div class="mr-auto place-self-center lg:col-span-7">
-            <h1 class="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl ">Sistem Informasi E - Complain</h1>
-            <p class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl">Project Based Learning dari seluruh jurusan di Fakultas Vokasi mulai dari Teknologi Informasi, Desain Grafis, Administrasi Bisnis, Manajemen Perhotelan dan Keuangan Perbankan tersedia dan dapat anda lihat di sini.</p>
+            <h1 class="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight text-white leading-none md:text-5xl xl:text-6xl ">Mobil Listrik Hyundai Ionic 5</h1>
+            <span class="text-red-700 font-semibold text-3x1">Harga : Rp 681,9 - 783,1 Juta
+    </span>
+            <p class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl">Mobil ini memiliki ground clearance 160 mm dengan dimensi sebagai berikut: 4635 mm L x 1890 mm W x 1647 mm H. Pesaing terdekat Hyundai Ioniq 5 adalah E-C4, Countryman, 3 Door dan Leaf.</p>
             <!-- <a href="#" class="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900">
                 Get started
                 <svg class="w-5 h-5 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
@@ -35,9 +37,43 @@
     </div>
 </section>
 
+
+<section class="bg-gray-900 my-16 shadow-xl">
+  <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
+      <div class="max-w-screen-full mb-8 lg:mb-16">
+          <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-white dark:text-white ">Spesifikasi Hyundai Ionic 5</h2>
+          <p class="text-gray-500 sm:text-l text-center dark:text-gray-400">Hyundai Ioniq 5 tersedia dalam pilihan mesin Electric di Indonesia Hatchback baru dari Hyundai hadir dalam 8 varian. Ioniq 5 tersedia dengan transmisi Otomatis tergantung variannya. Ioniq 5 adalah Hatchback 5 seater dengan panjang 4635 mm, lebar 1890 mm, wheelbase 3000 mm. serta ground clearance 160 mm.</p>
+      </div>    
+      <div class="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0">
+        <div class="max-w-sm bg-white flex border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 flex flex-col items-center justify-center">
+            <div class="w-12 h-12 rounded-full bg-black flex justify-center items-center mb-4 lg:h-16 lg:w-16">
+                <img src="img/flaticon-oil.png" alt="bbm" class="w-6 h-6 text-white lg:w-8 lg:h-8 dark:text-primary-300">
+            </div>
+            <h3 class="mb-2 text-xl font-bold text-center text-white">Jenis transmisi</h3>
+            <p class="text-gray-500 dark:text-gray-400 text-center">Listrik Otomatis</p>
+        </div>
+
+        <div class="max-w-sm bg-white flex border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 flex flex-col items-center justify-center">
+            <div class="w-12 h-12 rounded-full bg-black flex justify-center items-center mb-4 lg:h-16 lg:w-16">
+                <img src="img/flaticon-oil.png" alt="bbm" class="w-6 h-6 text-white lg:w-8 lg:h-8 dark:text-primary-300">
+            </div>
+            <h3 class="mb-2 text-xl font-bold text-center text-white">Jenis transmisi</h3>
+            <p class="text-gray-500 dark:text-gray-400 text-center">Listrik Otomatis</p>
+        </div>
+
+        <div class="max-w-sm bg-white flex border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 flex flex-col items-center justify-center">
+            <div class="w-12 h-12 rounded-full bg-black flex justify-center items-center mb-4 lg:h-16 lg:w-16">
+                <img src="img/flaticon-oil.png" alt="bbm" class="w-6 h-6 text-white lg:w-8 lg:h-8 dark:text-primary-300">
+            </div>
+            <h3 class="mb-2 text-xl font-bold text-center text-white">Jenis transmisi</h3>
+            <p class="text-gray-500 dark:text-gray-400 text-center">Listrik Otomatis</p>
+        </div>
+
+</section>
+
 <!-- pertinjau project -->
-<section class="bg-gray-900">
-        <h2 class="pt-8 px-4 text-5xl tracking-tight font-extrabold text-center text-gray-900  ">Pertinjau Proyek</h2>
+<section class="bg-gray-900 my-16 shadow-xl">
+        <h2 class="pt-8 px-4 text-5xl tracking-tight font-extrabold text-center text-white  ">Pertinjau Proyek</h2>
         <p class="py-4 px-4 text-gray-500 sm:text-xl text-center text-gray-700">Here at Flowbite we focus on markets where technology, innovation, and capital can unlock long-term value and drive economic growth.</p>
         <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6 grid grid-cols-3 place-items-center">   
 
@@ -94,17 +130,31 @@
         </div>
 </section>
 
-<section class="bg-white">
-<div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
-        <h2 class="pt-8 px-4 text-4xl tracking-tight font-extrabold text-center text-grey-900">Pertinjau Proyek</h2>
+<section class="bg-gray-900 my-16 shadow-xl">
+    <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
+        <h2 class="pt-8 px-4 text-4xl tracking-tight font-extrabold text-center text-white">Gambar Eksterior Interior</h2>
         <p class="py-4 px-4 text-gray-600 sm:text-xl text-center">Here at Flowbite we focus on markets where technology, innovation, and capital can unlock long-term value and drive economic growth.</p>
-        <div class="h-auto max-w-lg mx-auto bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-            <img src="./assets/img/img_lp1.png" alt="mockup">
+        <div class="container">
+            <div class="pt-5 mt-5 flex flex-wrap justify-center">
+                <div class="w-full md:w-1/3 mb-4">
+                    <img src="./img/hyundaiionic5/kursi depan.jpeg" class="p-2 w-full" alt="">
+                    <img src="./img/hyundaiionic5/cup holder.jpeg" class="p-2 w-full" alt="">
+                </div>
+                <div class="w-full md:w-1/3 mb-4">
+                    <img src="./img/hyundaiionic5/roof.jpeg" class="p-2 w-full" alt="">
+                    <img src="./img/hyundaiionic5/tampilan atas.jpeg" class="p-2 w-full" alt="">
+                </div>
+                <div class="w-full md:w-1/3 mb-4">
+                    <img src="./img/hyundaiionic5/hyundai ionic 5.jpeg" class="p-2 w-full" alt="">
+                    <img src="./img/hyundaiionic5/lampu depan.jpeg" class="p-2 w-full" alt="">
+                </div>
+            </div>
         </div>
-</div>
+    </div>
 </section>
 
-<section class="bg-white">
+
+<section class="bg-gray-900 my-16 shadow-xl">
 <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
         <img src="./assets/img/group 37898.png" alt="">
 </div>
