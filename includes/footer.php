@@ -3,7 +3,7 @@
         <div class="md:flex md:justify-between">
             <div class="mb-6 md:mb-0">
                 <a href="#" class="flex items-center">
-                    <img src="./img/logo.png" class="mr-5 h-10" alt="FlowBite Logo"/>
+                    <img src="./img/logo.png" class=" mr-30 h-40    " alt="FlowBite Logo"/>
                     <!-- <span class="self-center text-2xl font-semibold whitespace-nowrap text-white">PBL Vokasi</span> -->
                 </a>
             </div>
@@ -12,10 +12,10 @@
                     <h2 class="mb-6 text-sm font-semibold text-white uppercase ">Website Lainnya</h2>
                     <ul class="text-gray-900">
                         <li class="mb-4">
-                            <a href="https://flowbite.com" class="hover:underline">Vokasi UB</a>
+                            <a href="https://flowbite.com" class="text-white hover:underline">Vokasi UB</a>
                         </li>
                         <li>
-                            <a href="https://tailwindcss.com/" class="hover:underline">Universitas Brawijaya</a>
+                            <a href="https://tailwindcss.com/" class="text-white hover:underline">Universitas Brawijaya</a>
                         </li>
                     </ul>
                 </div>
@@ -23,10 +23,10 @@
                     <h2 class="mb-6 text-sm font-semibold text-white uppercase">Ikuti Kami</h2>
                     <ul class="text-gray-900">
                         <li class="mb-4">
-                            <a href="https://github.com/themesberg/flowbite" class="hover:underline ">Instagram</a>
+                            <a href="https://github.com/themesberg/flowbite" class="text-white hover:underline ">Instagram</a>
                         </li>
                         <li>
-                            <a href="https://discord.gg/4eeurUVvTy" class="hover:underline">Twitter</a>
+                            <a href="https://discord.gg/4eeurUVvTy" class="text-white hover:underline">Twitter</a>
                         </li>
                     </ul>
                 </div>
@@ -34,10 +34,10 @@
                     <h2 class="mb-6 text-sm font-semibold text-white uppercase text-white">Legal</h2>
                     <ul class="text-gray-900 text-white">
                         <li class="mb-4">
-                            <a href="#" class="hover:underline">Privacy Policy</a>
+                            <a href="#" class="text-white hover:underline">Privacy Policy</a>
                         </li>
                         <li>
-                            <a href="#" class="hover:underline">Terms &amp; Conditions</a>
+                            <a href="#" class="text-white hover:underline">Terms &amp; Conditions</a>
                         </li>
                     </ul>
                 </div>

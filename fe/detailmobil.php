@@ -188,11 +188,11 @@
 </section>
 
 
-<section class="bg-gray-900 my-16 shadow-xl">
+<!-- <section class="bg-gray-900 my-16 shadow-xl">
 <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
         <img src="./assets/img/group 37898.png" alt="">
 </div>
-</section>
+</section> -->
 
 
     <!-- Footer -->
