@@ -32,7 +32,7 @@
                 </svg>
             </a>
                     
-            <button id="dropdownDelayButton" data-dropdown-toggle="dropdownDelay" data-dropdown-delay="500" data-dropdown-trigger="hover" class="inline-flex justify-center hover:text-gray-900 items-center py-3 px-5 sm:ms-4 text-base font-medium text-center text-white rounded-lg border border-blue-500 hover:bg-gray-100 focus:ring-4 focus:ring-gray-400" type="button">Jenis Mobil <svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+            <button id="dropdownDelayButton" data-dropdown-toggle="dropdownDelay" data-dropdown-delay="500" data-dropdown-trigger="hover" class="inline-flex justify-center hover:text-gray-900 items-center py-3 px-5 sm:ms-4 text-base font-medium text-center text-white rounded-lg border border-blue-500 hover:bg-gray-700 focus:ring-4 focus:ring-gray-400" type="button">Jenis Mobil <svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
                     </svg>
                 </button>
@@ -41,16 +41,16 @@
                 <div id="dropdownDelay" class="z-10 hidden bg-gray-800 divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
                     <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDelayButton">
                     <li>
-                        <a href="./detailmobil.php" class="block px-4 py-2 hover:bg-gray-100 hover:bg-blue-500">Hyundai Ioniq 5</a>
+                        <a href="./detailmobil.php" class="block px-4 py-2  hover:bg-blue-500">Hyundai Ioniq 5</a>
                     </li>
                     <li>
-                        <a href="./detailmobil.php" class="block px-4 py-2 hover:bg-gray-100 hover:bg-blue-500">BMW F4</a>
+                        <a href="./detailmobil.php" class="block px-4 py-2  hover:bg-blue-500">BMW F4</a>
                     </li>
                     <li>
-                        <a href="./detailmobil.php" class="block px-4 py-2 hover:bg-gray-100 hover:bg-blue-500">Mercedes</a>
+                        <a href="./detailmobil.php" class="block px-4 py-2  hover:bg-blue-500">Mercedes</a>
                     </li>
                     <li>
-                        <a href="./detailmobil.php" class="block px-4 py-2 hover:bg-gray-100 hover:bg-blue-500">Honda</a>
+                        <a href="./detailmobil.php" class="block px-4 py-2  hover:bg-blue-500">Honda</a>
                     </li>
                     </ul>
                 </div>
