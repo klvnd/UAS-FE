@@ -62,7 +62,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <div class="justify-between items-center w-full lg:flex lg:w-auto lg:order-1">
                     <h1 class="font-bold mx-4">Admin</h1>
                     <!-- Logout button -->
-                    <a href="index.php">
+                    <a href="../fe/index.php">
                         <button class="text-red-700 hover:text-red focus:ring-2 focus:ring-red-500 focus:outline-none rounded-md px-3 py-1.5 text-sm bg-red-200 dark:bg-red-700 dark:hover:bg-red-600 dark:text-white">
                             Logout
                         </button>
