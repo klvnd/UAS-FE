@@ -1,25 +1,38 @@
 <?php
+// Sertakan file koneksi atau buat koneksi di sini
 include("koneksi.php");
 
 // Query untuk mendapatkan data terakhir
-$queryLatest = "SELECT * FROM data_mobil ORDER BY id_mobil DESC LIMIT 1";
+$queryLatest = "SELECT * FROM mobil ORDER BY id_mobil DESC LIMIT 1";
 $resultLatest = $koneksi->query($queryLatest);
 
 // Query untuk mendapatkan seluruh data
-$queryAll = "SELECT * FROM data_mobil";
+$queryAll = "SELECT * FROM mobil";
 $resultAll = $koneksi->query($queryAll);
 
 // Handle form submission
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $nama_mobil = $_POST["name"];
-    $harga_mobil = $_POST["harga"];
-
-    $foto_mobil = "default_filename.jpg"; 
-
+    // Assuming your form fields are named 'name', 'harga', etc.
+    $merek = $_POST["merek"];
+    $harga = $_POST["harga"];
     $deskripsi = $_POST["deskripsi"];
+    $yt = $_POST["yt"];
+
+    // Foto
+    $foto = $_FILES['foto']['name'];
+    $file_tmp = $_FILES['foto']['tmp_name'];
+    move_uploaded_file($file_tmp, 'img/file/'.$foto);
+
+    $eksterior = $_FILES['eksterior']['name'];
+    $eksterior_tmp = $_FILES['eksterior']['tmp_name'];
+    move_uploaded_file($eksterior_tmp, 'img/file/'.$eksterior);
+
+    $interior = $_FILES['interior']['name'];
+    $interior_tmp = $_FILES['interior']['tmp_name'];
+    move_uploaded_file($interior_tmp, 'img/file/'.$interior);
 
     // Insert data into the database
-    $insertQuery = "INSERT INTO data_mobil (nama_mobil, harga_mobil, foto_mobil, deskripsi) VALUES ('$nama_mobil', '$harga_mobil', '$foto_mobil', '$deskripsi')";
+    $insertQuery = "INSERT INTO mobil (merek, foto, harga, deskripsi, yt, eksterior, interior) VALUES ('$merek', '$foto', '$harga', '$deskripsi', '$yt', '$eksterior', '$interior')";
     $insertResult = $koneksi->query($insertQuery);
 
     // Check if the insertion was successful
@@ -29,7 +42,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         echo "Error: " . $koneksi->error;
     }
 }
-
 ?>
 
 <!DOCTYPE html>
@@ -88,28 +100,40 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                         </button>
                     </div>
                     <!-- Modal body -->
-                    <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>" class="p-4 md:p-5">
+                    <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>" class="p-4 md:p-5" enctype="multipart/form-data">
                         <div class="grid gap-4 mb-4 grid-cols-2">
-                            <div class="col-span-2">
-                                <label for="name" class="block mb-2 text-sm font-medium text-gray-900 ">Foto Mobil</label>
-                                <input class="block w-full text-sm border rounded-lg cursor-pointer" id="file_input" type="file">
+                        <div class="col-span-2">
+                                <label for="merek" class="block mb-2 text-sm font-medium text-gray-900 ">Merek</label>
+                                <input type="text" name="merek" id="merek" class="bg-white border border-blue-500 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5 " placeholder="Merek" required="">
                             </div>
                             <div class="col-span-2">
-                                <label for="name" class="block mb-2 text-sm font-medium text-gray-900 ">Nama Mobil</label>
-                                <input type="text" name="name" id="name" class="bg-white border border-blue-500 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5 " placeholder="Nama Mobil" required="">
+                                <label for="foto" class="block mb-2 text-sm font-medium text-gray-900 ">Foto</label>
+                                <input class="block w-full text-sm border rounded-lg cursor-pointer" id="foto" type="file" name="foto">
                             </div>
                             <div class="col-span-2">
-                                <label for="name" class="block mb-2 text-sm font-medium text-gray-900 ">Harga Mobil</label>
-                                <input type="text" name="harga" id="harga" class="bg-white border border-blue-500 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5 " placeholder="Harga Mobil Rp" required="">
+                                <label for="name" class="block mb-2 text-sm font-medium text-gray-900 ">Harga</label>
+                                <input type="text" name="harga" id="harga" class="bg-white border border-blue-500 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5 " placeholder="Harga Rp" required="">
                             </div>
                             <div class="col-span-2">
                                 <label for="deskripsi" class="block mb-2 text-sm font-medium text-gray-900 ">Deskripsi</label>
                                 <textarea name="deskripsi" id="deskripsi" class="bg-white border border-blue-500 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5" placeholder="Deskripsi mobil..."></textarea>
                             </div>
+                            <div class="col-span-2">
+                                <label for="yt" class="block mb-2 text-sm font-medium text-gray-900 ">Link Youtube</label>
+                                <textarea name="yt" id="yt" class="bg-white border border-blue-500 text-gray-900 text-sm rounded-lg focus:ring-blue-600 focus:border-blue-600 block w-full p-2.5" placeholder="Link youtobe...."></textarea>
+                            </div>
+                            <div class="col-span-2">
+                                <label for="eksterior" class="block mb-2 text-sm font-medium text-gray-900 ">Tampilan Eksterior</label>
+                                <input class="block w-full text-sm border rounded-lg cursor-pointer" id="eksterior" type="file" name="eksterior">
+                            </div>
+                            <div class="col-span-2">
+                                <label for="interior" class="block mb-2 text-sm font-medium text-gray-900 ">Tampilan Interior</label>
+                                <input class="block w-full text-sm border rounded-lg cursor-pointer" id="interior" type="file" name="interior">
+                            </div>
                         </div>
                         <button type="submit" class="text-white inline-flex items-center bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
                             <svg class="me-1 -ms-1 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z" clip-rule="evenodd"></path></svg>
-                            Add
+                                Add
                         </button>
                     </form>
                 </div>
@@ -122,9 +146,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     <thead class="text-xs text-gray-50 uppercase bg-blue-900">
                         <tr>
                             <th scope="col" class="lg:px-4 lg:py-3 px-2 py-3">No</th>
-                            <th scope="col" class="lg:px-4 lg:py-3 px-2 py-3">Foto Mobil</th>                                
-                            <th scope="col" class="lg:px-4 lg:py-3 px-2 py-3">Nama Mobil</th>
-                            <th scope="col" class="lg:px-4 lg:py-3 px-2 py-3">Harga Mobil</th>
+                            <th scope="col" class="lg:px-4 lg:py-3 px-2 py-3">Foto</th>                                
+                            <th scope="col" class="lg:px-4 lg:py-3 px-2 py-3">Merek</th>
+                            <th scope="col" class="lg:px-4 lg:py-3 px-2 py-3">Harga</th>
                             <th scope="col" class="lg:px-4 lg:py-3 px-2 py-3">Deskripsi</th>
                             <th scope="col" class="lg:px-4 lg:py-3 px-2 py-3">Actions</th>
                         </tr>
@@ -139,17 +163,20 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                             ?>
                             <tr class="border-b hover:bg-gray-100">
                                 <th scope="row" class="px-4 py-3 px-2 py-3 font-medium text-gray-900 whitespace-nowrap"><?php echo $index + 1; ?></th>
-                                <td class="px-4 py-3 px-2 py-3"><img src="img/<?php echo $row['foto_mobil']; ?>" alt="" class="w-40"></td>
-                                <td class="px-4 py-3 px-2 py-3"><?php echo $row['nama_mobil']; ?></td>
-                                <td class="px-4 py-3 px-2 py-3"><?php echo $row['harga_mobil']; ?></td>
+                                <td class="px-4 py-3 px-2 py-3"><img src="img/file/<?php echo $row['foto']; ?>" alt="" class="w-40"></td>
+                                <td class="px-4 py-3 px-2 py-3"><?php echo $row['merek']; ?></td>
+                                <td class="px-4 py-3 px-2 py-3"><?php echo $row['harga']; ?></td>
                                 <td class="px-4 py-3 px-2 py-3"><?php echo $row['deskripsi']; ?></td>
                                 <td class="px-4 py-3 px-2 py-3">
-                                    <button type="button" class="text-red-700 border-2 border-red-700 hover:bg-red-700 hover:text-white ml-2 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-full text-sm p-2.5 text-center inline-flex items-center">
-                                        <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 20">
-                                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h16M7 8v8m4-8v8M7 1h4a1 1 0 0 1 1 1v3H6V2a1 1 0 0 1 1-1ZM3 5h12v13a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V5Z"/>
-                                        </svg>
+                                <form method="post" action="delete.php" onsubmit="return confirm('Are you sure you want to delete this item?');">
+                                    <input type="hidden" name="delete_id" value="<?php echo $row['id_mobil']; ?>">
+                                        <button type="submit" class="delete-btn text-red-700 border-2 border-red-700 hover:bg-red-700 hover:text-white ml-2 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-full text-sm p-2.5 text-center inline-flex items-center">
+                                          <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 20">
+                                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h16M7 8v8m4-8v8M7 1h4a1 1 0 0 1 1 1v3H6V2a1 1 0 0 1 1-1ZM3 5h12v13a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V5Z"/>
+                                          </svg>
                                         <span class="sr-only">Icon description</span>
-                                    </button>
+                                        </button>
+                                </form>
                                 </td>
                             </tr>
                             <?php
