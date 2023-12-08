@@ -142,7 +142,7 @@
 <section class="bg-gray-900 my-16 shadow-xl">
     <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
         <h2 class="pt-8 px-4 text-4xl tracking-tight font-extrabold text-center text-white">Tampilan Interior</h2>
-        <p class="py-4 px-4 text-gray-600 sm:text-xl text-center">Berikut Tampilan Eksterior</p>
+        <p class="py-4 px-4 text-gray-600 sm:text-xl text-center">Berikut Tampilan Interior</p>
         <div class="container">
             <div class="pt-5 mt-5 flex flex-wrap justify-center">
                 <div class="w-full md:w-1/3 mb-4">
@@ -165,8 +165,8 @@
 
 <section class="bg-gray-900 my-16 shadow-xl">
     <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
-        <h2 class="pt-8 px-4 text-4xl tracking-tight font-extrabold text-center text-white">Gambar Eksterior</h2>
-        <p class="py-4 px-4 text-gray-600 sm:text-xl text-center">Here at Flowbite we focus on markets where technology, innovation, and capital can unlock long-term value and drive economic growth.</p>
+        <h2 class="pt-8 px-4 text-4xl tracking-tight font-extrabold text-center text-white">Tampilan Eksterior</h2>
+        <p class="py-4 px-4 text-gray-600 sm:text-xl text-center">Berikut Tampilan Eksterior</p>
         <div class="container">
             <div class="pt-5 mt-5 flex flex-wrap justify-center">
                 <div class="w-full md:w-1/3 mb-4">
