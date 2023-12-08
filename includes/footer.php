@@ -3,8 +3,8 @@
         <div class="md:flex md:justify-between">
             <div class="mb-6 md:mb-0">
                 <a href="#" class="flex items-center">
-                    <img src="./assets/img/logo.png" class="mr-3 h-8" alt="FlowBite Logo"/>
-                    <span class="self-center text-2xl font-semibold whitespace-nowrap text-white">PBL Vokasi</span>
+                    <img src="./img/logo.png" class="mr-5 h-10" alt="FlowBite Logo"/>
+                    <!-- <span class="self-center text-2xl font-semibold whitespace-nowrap text-white">PBL Vokasi</span> -->
                 </a>
             </div>
             <div class="grid grid-cols-2 gap-12 sm:gap-6 sm:grid-cols-3">
@@ -45,7 +45,7 @@
         </div>
         <hr class="my-6 border-gray-200 sm:mx-auto border-white lg:mt-8 lg:mb:4"/>
         <div class="sm:flex sm:items-center sm:justify-between">
-            <span class="text-sm text-amber-500 sm:text-center text-white">© 2023 <a href="https://flowbite.com" class="hover:underline">PBL Vokasi</a>. All Rights Reserved.
+            <span class="text-sm  sm:text-center text-white">© 2023 <a href="https://flowbite.com" class="hover:underline">Mobil Listrik Vokasi</a>. All Rights Reserved.
             </span>
             <div class="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
                 <a href="#" class="text-white hover:text-white hover:text-white">
